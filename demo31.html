@@ -1,0 +1,58 @@
+<html>
+    <head>
+   <title>DEMO 31</title>
+    <script>
+    
+    // template literal
+
+    const name ="Deekshi"
+    // ` backtick
+    document.writeln(` My name is: <b>${name}</b></br>`)
+
+
+    // spread operator
+
+    const a = [1,2,3]
+    const b= [...a,4,5]  // ... for concatination
+    document.writeln(a+"</br>")
+    document.writeln(b+"</br>")
+
+    const p = [10,20,30]
+    const q = [40,50,60]
+    const r =[...p,...q]
+    document.writeln(p+"</br>")
+    document.writeln(q+"</br>")
+    document.writeln(r+"</br>")
+
+    const v1 = "kluniversity"
+    const v2 = [...v1]     //Iteratable Object
+    document.writeln("v1="+v1+"</br>")
+    document.writeln("v2="+v2+"</br>")
+
+
+    // destructuring assignment
+
+    const arr = ['os',"aws",10,30]
+    document.writeln("Array="+arr+"</br>")
+    document.writeln("Array Length="+arr.length)
+    
+    const [m,s,w,d] = arr
+    document.writeln(m+"</br>") //os
+    document.writeln(s+"</br>") //aws
+    document.writeln(w+"</br>") //10
+    document.writeln(d+"</br>") //30
+
+    const [i,j] = arr
+    document.writeln(i+"</br>") //os
+    document.writeln(j+"</br>") //aws
+
+    const [x,,y] = arr
+    document.writeln(x+"</br>") //os
+    document.writeln(y+"</br>") //10
+
+     </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
